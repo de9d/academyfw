@@ -23,12 +23,13 @@ public class SuiteTest extends BaseTest {
 
     @Test
     public void addSuiteTest() {
-        SuitePage suitePage = mainPage
+        mainPage
                 .clickOnProjectLink()
                 .clickOnTestCasesLink()
                 .clickOnAddSectionBtn()
                 .fillNameField(suiteName)
                 .fillDescriptionField(suiteDescription)
                 .clickOnAcceptBtn();
+        //add asserts
     }
 }
